@@ -21,6 +21,8 @@ public class Calculadora {
         System.out.println("Seleccione una opcion:");
         System.out.println("1.-Suma");
         System.out.println("2.-Resta");
+        System.out.println("3.-Multiplicacion");
+        System.out.println("4.-Divicion");
         opc = sc.nextInt();
         
         switch(opc){
@@ -38,6 +40,20 @@ public class Calculadora {
                 num2 = sc.nextInt();
                 resta(num1,num2);
                 break;
+            case 3: 
+                System.out.println("Ingrese el primer numero:");
+                num1 = sc.nextInt();
+                System.out.println("Ingrese el segundo numero:");
+                num2 = sc.nextInt();
+                mul(num1,num2);
+                break;
+            case 4: 
+                System.out.println("Ingrese el primer numero:");
+                num1 = sc.nextInt();
+                System.out.println("Ingrese el segundo numero:");
+                num2 = sc.nextInt();
+                mul(num1,num2);
+                break;
         }
     }
     public static void suma(int num1, int num2){
@@ -48,6 +64,16 @@ public class Calculadora {
     public static void resta(int num1, int num2){
         int res = num1-num2;
         System.out.println("La resta es: "+res);
+       
+    }
+    public static void mul(int num1, int num2){
+        int res = num1*num2;
+        System.out.println("La multiplicacion es: "+res);
+       
+    }
+    public static void div(int num1, int num2){
+        int res = num1/num2;
+        System.out.println("La divicioncion es: "+res);
        
     }
     
